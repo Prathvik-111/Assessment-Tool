@@ -1,0 +1,11 @@
+{
+  "name": "Descriptive Answer Rubric",
+  "version": 1,
+  "max_score": 10,
+  "criteria": [
+    {"name": "conceptual_accuracy", "weight": 0.4},
+    {"name": "reasoning", "weight": 0.3},
+    {"name": "completeness", "weight": 0.2},
+    {"name": "clarity", "weight": 0.1}
+  ]
+}

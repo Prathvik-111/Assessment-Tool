@@ -1,0 +1,7 @@
+{
+  "event": "submission.received",
+  "event_id": "evt_example_001",
+  "submission_id": "sub_example_001",
+  "assessment_id": "assessment_example_001",
+  "occurred_at": "2026-10-15T00:00:00Z"
+}

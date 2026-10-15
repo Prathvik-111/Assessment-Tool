@@ -1,0 +1,14 @@
+flowchart TD
+    A[Submission Received] --> B[Validate Input]
+    B --> C[Load Versioned Rubric]
+    C --> D[Evaluate Answer]
+    D --> E[Verify Score and Evidence]
+    E --> F{Confidence and Rules Pass?}
+    F -->|No| G[Human Review]
+    F -->|Yes| H[Finalize Result]
+    G --> H
+    H --> I[Persist Audit Trail]
+    I --> J[Notify Student]
+    J --> K{Certificate Eligible?}
+    K -->|Yes| L[Issue Certificate]
+    K -->|No| M[Finish]

@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "07 Failure Recovery",
+  "description": "Design in n8n: catch workflow errors -> bounded retry for transient errors -> alert after retry exhaustion."
+}

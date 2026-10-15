@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "02 Assessment Orchestration",
+  "description": "Design in n8n: receive event -> invoke protected backend grading endpoint -> branch on result status."
+}

@@ -1,0 +1,8 @@
+flowchart TD
+    A((START)) --> B[validate_submission]
+    B --> C[evaluate_answer]
+    C --> D[verify_score]
+    D --> E[detect_uncertainty]
+    E -->|Needs review| F((END - Review Required))
+    E -->|Validated| G[finalize_result]
+    G --> H((END))

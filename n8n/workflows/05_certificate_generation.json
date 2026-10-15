@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "05 Certificate Generation",
+  "description": "Design in n8n: request certificate -> backend verifies eligibility -> generate and store certificate -> notify student."
+}

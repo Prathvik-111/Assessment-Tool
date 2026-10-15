@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "06 Email Notification",
+  "description": "Design in n8n: notification event -> choose approved template -> send via configured provider -> record outcome."
+}

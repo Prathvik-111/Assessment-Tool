@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "04 Human Review Alert",
+  "description": "Design in n8n: review-required event -> notify authorized instructor -> record acknowledgement."
+}

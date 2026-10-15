@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "03 Grading Completed",
+  "description": "Design in n8n: grading-completed webhook -> check release status -> notify student."
+}

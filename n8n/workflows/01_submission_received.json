@@ -1,0 +1,5 @@
+{
+  "_placeholder": true,
+  "name": "01 Submission Received",
+  "description": "Design in n8n: Webhook trigger -> validate payload -> call backend -> handle response. Export a real workflow from n8n before importing."
+}

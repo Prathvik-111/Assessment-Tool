@@ -1,0 +1,13 @@
+flowchart TD
+    A[Student / Instructor UI] --> B[FastAPI]
+    B --> C[Submission Validation]
+    C --> D[LangGraph Assessment]
+    D --> E[Rubric Evaluation]
+    E --> F[Score Verification]
+    F --> G{Needs Human Review?}
+    G -->|Yes| H[Instructor Review Queue]
+    G -->|No| I[Finalize Result]
+    H --> I
+    I --> J[(PostgreSQL)]
+    I --> K[n8n Notifications]
+    I --> L[Certificate Eligibility Check]

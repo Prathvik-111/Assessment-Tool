@@ -1,0 +1,11 @@
+{
+  "name": "Coding Assessment Rubric",
+  "version": 1,
+  "max_score": 100,
+  "criteria": [
+    {"name": "correctness", "weight": 0.5},
+    {"name": "edge_cases", "weight": 0.2},
+    {"name": "efficiency", "weight": 0.15},
+    {"name": "readability", "weight": 0.15}
+  ]
+}

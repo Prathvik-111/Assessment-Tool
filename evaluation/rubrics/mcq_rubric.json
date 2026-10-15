@@ -1,0 +1,6 @@
+{
+  "name": "MCQ Rubric",
+  "version": 1,
+  "max_score": 1,
+  "criteria": [{"name": "correctness", "weight": 1}]
+}
