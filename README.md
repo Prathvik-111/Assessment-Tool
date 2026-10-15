@@ -1,38 +1,41 @@
 # Smart Assessment Tool
 
-An AI-assisted assessment and certification platform built around **LangGraph**, **n8n**, **FastAPI**, and **PostgreSQL**.
+An AI-assisted assessment and certification platform built with LangGraph, n8n, FastAPI, and PostgreSQL.
 
-## Core workflow
-1. Student submits an answer or assessment.
-2. FastAPI validates the request and stores the submission.
-3. LangGraph evaluates the response against a defined rubric.
-4. Validation and uncertainty checks determine whether the result can be finalized or needs human review.
-5. PostgreSQL stores the result and audit events.
-6. n8n handles notifications and downstream automations.
-7. Certificates are generated only when the configured eligibility rules are met.
+## Features
+- Automated assessment workflow using LangGraph
+- Rubric-based grading architecture
+- Human review for uncertain results
+- FastAPI endpoints for submissions and results
+- n8n workflow automation and notifications
+- PostgreSQL integration architecture
+- Certificate eligibility and generation workflow
+- Testing and GitHub Actions scaffolding
 
-## Repository layout
-- `backend/` — API, LangGraph graph, grading services, persistence and integrations.
-- `n8n/workflows/` — n8n workflow export placeholders and examples.
-- `evaluation/` — rubrics, test data and grading-quality metrics.
-- `frontend/` — placeholder for a student/instructor web interface.
-- `docs/` — architecture and workflow documentation.
-- `certificates/` — templates and ignored generated files.
+## Technology Stack
+- Python
+- LangGraph and LangChain
+- FastAPI
+- PostgreSQL and SQLAlchemy
+- n8n
+- Docker
+- pytest and GitHub Actions
 
-## Quick start (backend skeleton)
-Use Python 3.11 or 3.12 for a predictable dependency ecosystem.
+## Project Status
+This repository contains the initial project scaffold. Database persistence, production grading integrations, authentication, and actual n8n workflows still need to be implemented and configured.
+
+## Getting Started
+
+Create and activate a virtual environment, then install dependencies:
 
 ```bash
 python -m venv .venv
-# Windows:
 .venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-
 pip install -r requirements.txt
 uvicorn backend.app.main:app --reload
 ```
 
-API docs: http://127.0.0.1:8000/docs
+Open `http://127.0.0.1:8000/docs` to explore the API.
 
-The initial repository is a starter scaffold, not a finished production grading system. Configure an LLM provider, database, authentication, and real n8n workflows before deploying.
+## Security
+Never commit API keys, passwords, environment files, or real student submissions.
